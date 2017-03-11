@@ -40,6 +40,37 @@ body {
 #services h1{
     color: lightgreen;
 }
+#header-container{
+    
+    width: 100%;
+    height: 600px;;
+    position: relative;
+    border-left: none;
+    border-right: none;
+    padding: 20px;
+}
+#video-container{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+video{
+    position: absolute;
+    z-index: -1;
+    opacity: 0.8;
+    width: 100%;
+}
+#header-container h2{
+    z-index: 1;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+}
+
 footer .footer{
     padding: 5px;
     margin-top: 20px;
