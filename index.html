@@ -53,12 +53,22 @@
                             <a href="about.html">About</a>
                         </li>
                     </ul>
+                    <form class="navbar-form navbar-right" method="get" action="search.php">
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Search" name="search">
+                        </div>
+                        <input type="submit" class="btn btn-default" value="Search">
+                      </form>
                 </div>
                 <!-- /.navbar-collapse -->
             </div>
             <!-- /.container -->
         </nav>
+        
+        
+      
     <header id="myCarousel" class="carousel slide">
+       
         <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -114,33 +124,51 @@
           <h1 class="text-center">Welcome to one of the top construction Co.</h1>
            <div class="col-md-4">
               <h3 class="heading">General Contracting</h3> 
-              <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit exercitationem, voluptatibus id soluta magni provident aliquam voluptates accusamus eos corporis libero quidem aperiam, praesentium itaque facilis, quis qui possimus quas.</p>
+              <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit exercitationem, voluptatibus id soluta magni provident aliquam voluptates accusamus eos corporis libero quidem aperiam, praesentium itaque facilis, quis qui possimus quas.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae saepe possimus ipsam sint, est eligendi non itaque quis totam, atque consectetur voluptatem nobis expedita minus nam error facere reprehenderit ad.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem earum, culpa impedit. Reprehenderit cupiditate ipsum placeat nemo sequi ratione, nesciunt, natus id laboriosam dolorum nulla officiis debitis, ut dicta quis!</p>
            </div>
            <div class="col-md-4">
               <h3 class="heading">Building Infromation Modeling</h3> 
-              <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit exercitationem, voluptatibus id soluta magni provident aliquam voluptates accusamus eos corporis libero quidem aperiam, praesentium itaque facilis, quis qui possimus quas.</p>
+              <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit exercitationem, voluptatibus id soluta magni provident aliquam voluptates accusamus eos corporis libero quidem aperiam, praesentium itaque facilis, quis qui possimus quas lorem
+                  </p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus maiores consequatur nam magni quaerat deserunt voluptatum, recusandae excepturi assumenda porro quibusdam facere repellat ipsum reprehenderit magnam non deleniti aperiam esse.</p>
            </div>
            <div class="col-md-4">
               <h3 class="heading">Construction Services</h3> 
               <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit exercitationem, voluptatibus id soluta magni provident aliquam voluptates accusamus eos corporis libero quidem aperiam, praesentium itaque facilis, quis qui possimus quas.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo laboriosam ipsum similique asperiores et enim neque excepturi magnam autem earum, voluptates, sed hic sunt quod commodi nostrum. Omnis aliquid, velit!</p>
            </div>
       
         </div>
     </section>
+    <button id="top" class="btn btn-primary"><span class="glyphicon glyphicon-chevron-up"></span>Go to Top</button>
+	    
     <footer>
-        <div class="footer">
-            <p class="text-center muted">Copyright &copy; 2017 First Building International</p>
+       <div class="container">
+           
+            <div class="footer">
+                <p class="text-center muted">Copyright &copy; 2017 First Building International</p>
+            </div>
         </div>
     </footer>
 
     <!--    Slider jquery-->
-    <script>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+     <script>
     $('.carousel').carousel({
         interval: 3000 //changes the speed
     })
     </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>                        
+        $('#top').on("click",function() {
+            $('html, body').animate({ scrollTop: 0 }, 'slow', function () {
+            return true;
+            });
+        });
+       
+    </script>
+
 </body>    
 
 </html>

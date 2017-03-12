@@ -3,6 +3,7 @@ html,
 body {
     height: 100%;
 }
+/* nav bar custom css */
 .transparent{
     background-color: rgba(0,0,0,.0);
     border: 0;
@@ -13,6 +14,7 @@ body {
     color: white;
     text-shadow: 2px 2px #000;
 }
+/* css for header  home page */
 .carousel,
 .item,
 .active {
@@ -22,8 +24,13 @@ body {
 .carousel-inner {
     height: 600px;;
 }
+.search{
+    margin-top: 15%;
+    z-index: 1;
+    position: fixed;
+}
 
-/* Background images are set within the HTML using inline CSS, not here */
+/* Background images are set within the HTML using inline CSS */
 
 .fill {
     width: 100%;
@@ -33,20 +40,33 @@ body {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    z-index: -1;
+    position: relative;
 }
+
+
+
+/* css for services page */
 #services h3{
     color: lightblue;
 }
-#services h1{
-    color: lightgreen;
+#header-service h2{
+    z-index: 1;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
 }
-#header-container{
+#header-service{
    
     height: 100%;
     width: 100%;
     overflow: hidden;
     position: relative;
     
+}
+#services h1{
+    color: lightgreen;
 }
 #bgvideo{
     position: fixed;
@@ -60,21 +80,17 @@ body {
     transform: translate(-25%, -25%);
 }
     
-   
-#header-container h2{
-    z-index: 1;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10%;
-}
-#contact-section{
-    min-height: 600px;
-}
+
+/*css for about page*/
 #about-section{
     min-height: 600px;
+    margin-top: 15%;
 }
-#gallery-section{
+
+
+
+/* css for contact page */
+#contact-section{
     min-height: 600px;
 }
 .form-area{
@@ -86,10 +102,21 @@ body {
 #map {
         height: 400px;
 }
+/* contact page end */
+
+/*css for gallery section */
 #gallery-section{
     margin-top: 15%;
 }
-
+#gallery-section{
+    min-height: 600px;
+}
+/*css for search */
+#search-box{
+    min-height: 600px;
+    margin-top: 15%;
+}
+/*css for footer */
 footer{
     padding: 5px;
     margin-top: 20px;
